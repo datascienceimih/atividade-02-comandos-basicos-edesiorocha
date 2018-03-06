@@ -61,6 +61,9 @@ print(b * c)   # mostra o resultado da multiplicação dos objetos 'b' e 'c'
 print(c / d)   # mostra o resultado da divisão dos objetos 'c' e 'd'
 #  [1] 3.333333 3.500000 3.666667 3.833333 4.000000 2.857143 3.000000 3.142857 3.285714 3.428571
 
+# Uma sugestão era fazer tudo de uma vez. Exemplos:
+a + b + c + d
+
 #_____________________________________________________________
 
 # 3) Execute a soma da raiz quadrada dos dois primeiros vetores
@@ -82,6 +85,9 @@ d^4
 print(sqrt(b) + d^4)    # mostra o resultado da soma da raíz quadrada de 'b'
                         # com a quarta potência de 'd'
 #  [1] 1297.414 1298.000 1298.449 1298.828 1299.162 2404.464 2404.742 2405.000 2405.243 2405.472
+
+# Sugestão
+(sqrt(a) + sqrt(b)) + (c^4 - d^4)
 
 #_____________________________________________________________
 
@@ -170,6 +176,12 @@ matriz1 * matriz2   # multiplicação entre matrizies de mesmo tamanho
 # [8,]   240  522  784 1026 1248 1450 1632 1794 1936  2058
 # [9,]   180  361  522  663  784  885  966 1027 1068  1089
 # [10,]  100  180  240  280  300  300  280  240  180   100
+
+# Para multiplicação de matrizes, normalmente usamos a forma %*%. Exemplo:
+matriz1 %*% matriz2
+# Se fizer a multiplicação de uma matriz por um vetor, por exemplo,
+# cálculo bastante comum na econometria,
+# dá um erro e não roda se não usar o formato %*%.
 
 #_____________________________________________________________
 
